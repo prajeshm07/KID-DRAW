@@ -5,9 +5,8 @@
 
 #include "pch.h"
 #include "MainPage.xaml.h"
-#include <iostream>
-#include <amp.h>
-#include <amp_graphics.h>
+
+
 using namespace logo;
 
 using namespace Platform;
@@ -52,7 +51,7 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
         rootFrame = ref new Frame();
 
         rootFrame->NavigationFailed += ref new Windows::UI::Xaml::Navigation::NavigationFailedEventHandler(this, &App::OnNavigationFailed);
-
+		
         if (e->PreviousExecutionState == ApplicationExecutionState::Terminated)
         {
             // TODO: Restore the saved session state only when appropriate, scheduling the

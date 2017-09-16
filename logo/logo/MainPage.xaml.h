@@ -6,6 +6,9 @@
 #pragma once
 
 #include "MainPage.g.h"
+#include <iostream>
+
+
 
 namespace logo
 {
@@ -15,7 +18,12 @@ namespace logo
 	public ref class MainPage sealed
 	{
 	public:
+		
 		MainPage();
+		void display()
+		{
+			std::cout<< "sd";
+		}
 
 	};
 }
